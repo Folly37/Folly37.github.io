@@ -7,24 +7,51 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/setka.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/meadia.css">
 </head>
 <body>
 
+    <section class="nav__mobil">
+		<div class="container">
+			<div class="row justify__content__end">
+				<div class="col-12 header__nav">
+					
+			<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="overlay-content">
+        <a class="nav__link" href="#">Projects</a>
+        <a class="nav__link" href="#">Services</a>
+        <a class="nav__link" href="#">About</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+        <a class="nav__link" href="#">Pricing</a>
+        <a class="nav__link" href="#">Pages</a>
+        <a class="nav__link nav__btn2" href="#">GEt in touch</a>
+    </div>		
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"> <img src="image/nav.svg"/> </span>	
+
+				</div>
+			</div>
+		</div>
+        <script src="menu.js"></script>
+	</section>
+    
     <nav class="nav">
         <div class="container-full">
         <div class="row justify__content__between">
-            <div class="col"><a href="#"><img class="nav__img" src="image/Logo.png" alt=""></a></div>
+            <div class="col"><a href="index.html"><img class="" src="image/Logo.png" alt=""></a></div>
             <div class="col">
-            <ul class="nav__list row">
-                <li class="nav__item"><a class="nav__link" href="">Projects</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Services</a></li>
-                <li class="nav__item"><a class="nav__link" href="">About</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Blog</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Pricing</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Pages</a></li>
-                <li lass="nav__item"><a class="nav_btn" href="">GEt in touch</a></li>
-            </ul>
-        </div>ц
+                <ul class="nav__list row">
+                    <li class="nav__item"><a class="nav__link" href="#">Projects</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Services</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Pages</a></li>
+                    <li class="nav__item"><a class="nav__btn" href="#">GEt in touch</a></li>
+                </ul>
+        </div>
     </div>
 </div>
 </nav>
@@ -41,10 +68,20 @@
                     <input class="contact__input" type="text" name="name" id="name" placeholder="Name">
 
                     <label class="contact__label" for="email">Email</label>
-                    <input class="contact__input" type="email" name="email" id="email" placeholder="You email">
+                    <input class="contact__input" type="email" name="email" id="email" placeholder="Your email">
 
-                    <label class="contact__label" for="text">Text</label>
-                    <textarea class="contact__textarea" name="text" id="text" cols="30" rows="10" placeholder="text"></textarea>
+                    <label class="contact__label" for="phone">Phone</label>
+                    <input class="contact__input" type="tel" name="phone" id="phone" placeholder="Your phone number">
+
+                    <label class="contact__label" for="company">Company</label>
+                    <input class="contact__input" type="text" name="company" id="company" placeholder="Your company">
+
+                    <label class="contact__label" for="text">Message</label>
+                    <textarea class="contact__textarea" name="text" id="text" cols="30" rows="10" placeholder="Your message" style="resize: none;"></textarea>
+
+                    <label class="contact__label">
+                        <input type="checkbox" name="agreement" id="agreement"> I agree to the terms and conditions
+                    </label>
 
                     <button class="contact__submit" type="submit">Send</button>
                 </form>
@@ -52,6 +89,7 @@
         </div>
     </div>
 </section>
+
 
     <footer class="footer">
         <div class="container row justify__content__between">
@@ -80,7 +118,7 @@
                 Pages
             </h3>
             <ul class="footer__menu">
-                <li class="footer__point"><a href="">Home</a></li>
+                <li class="footer__point"><a href="index.html">Home</a></li>
                 <li class="footer__point"><a href="">Services</a></li>
                 <li class="footer__point"><a href="">About</a></li>
                 <li class="footer__point"><a href="">Contact</a></li>
